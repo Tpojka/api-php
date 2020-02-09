@@ -10,9 +10,11 @@ class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        return response()->json([
-            'email' => $request->user()->email,
-            'name' => $request->user()->name
-        ], 200);
+//        return response()->json([
+//            'email' => $request->user()->email,
+//            'name' => $request->user()->name
+//        ], 200);
+
+        return response()->json($request->user(), 200);
     }
 }

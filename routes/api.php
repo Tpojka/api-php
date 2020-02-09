@@ -18,4 +18,9 @@ Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
     Route::post('logout', 'LogoutController')->middleware('auth:api');
 });
 
+Route::group(['middleware' => ['auth:api']], function () {
+    Route::put('profiles/update-profile', 'Profile\IndexController@updateProfile');
+    Route::resource('profiles', 'Profile\IndexController');
+});
+
 Route::get('dashboard', 'DashboardController@index')->middleware('auth:api');

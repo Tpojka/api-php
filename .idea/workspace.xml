@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91789bda-5390-4136-bc62-8b0755749550" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +200,7 @@
       <updated>1580885253668</updated>
       <workItem from="1580885257185" duration="14927000" />
       <workItem from="1581168293698" duration="199000" />
+      <workItem from="1581170295493" duration="7477000" />
     </task>
     <servers />
   </component>
@@ -212,9 +216,10 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="482" y="23" width="476" height="834" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580914864131" />
-    <state x="397" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1580885257650">
+    <state x="397" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1581170297637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1581170297637" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580885257650" />
     <state x="378" y="197" width="683" height="486" key="find.popup" timestamp="1580893601670">
       <screen x="0" y="23" width="1440" height="834" />

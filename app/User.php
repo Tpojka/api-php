@@ -17,7 +17,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'uuid4', 'name', 'email', 'password',
     ];
 
     /**
@@ -52,5 +52,15 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    public function toArray()
+    {
+        return [
+            'id' => $this->id,
+            'uuid4' => $this->uuid4,
+            'name' => $this->name,
+            'email' => $this->email,
+        ];
     }
 }

@@ -18,6 +18,10 @@ class RegisterController extends Controller
     public function __invoke(RegisterRequest $request)
     {
         try {
+            if ($request->user()) {
+                throw new Exception('User registered already.');
+            }
+
             $credentials = $request->only([
                 'name',
                 'email',
@@ -35,7 +39,7 @@ class RegisterController extends Controller
 
             $return = response()->json(['user' => $user, 'token' => $token], 201);
         } catch (Exception $e) {
-            $return = response()->json(['error' => $e->getMessage()], 500);
+            $return = response()->json(['error' => $e->getMessage(), 'redirect_route' => 'home'], 500);
         } finally {
             return $return;
         }

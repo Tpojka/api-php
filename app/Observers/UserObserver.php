@@ -3,7 +3,7 @@
 namespace App\Observers;
 
 use App\User;
-use Illuminate\Support\Facades\Hash;
+use Hash;
 use Ramsey\Uuid\Uuid;
 
 class UserObserver
@@ -30,6 +30,19 @@ class UserObserver
     public function created(User $user)
     {
         //
+    }
+
+    /**
+     * Handle the user "updating" event.
+     *
+     * @param User $user
+     * @return void
+     */
+    public function updating(User $user)
+    {
+        if (empty($user->name)) {
+            $user->name = '#' . mb_substr(md5($user->id), 0, 6);
+        }
     }
 
     /**

@@ -4,6 +4,9 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -29,10 +32,10 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * @param  \Exception  $exception
+     * @param Exception $exception
      * @return void
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public function report(Exception $exception)
     {
@@ -42,14 +45,22 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $exception
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @param  Request  $request
+     * @param Exception $exception
+     * @return Response
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof MethodNotAllowedHttpException) {
+            if ($request->ajax()) {
+                \Log::debug('It is ajax from Postman.');
+                return response()->json(['error' => $exception->getMessage(), 'redirect_route' => 'home']);
+            }
+            \Log::debug('It is NOT ajax from Postman.');
+            return redirect()->route('home');
+        }
         return parent::render($request, $exception);
     }
 }

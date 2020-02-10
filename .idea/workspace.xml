@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91789bda-5390-4136-bc62-8b0755749550" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Api/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Api/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/UserObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/UserObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +215,8 @@
       <updated>1580885253668</updated>
       <workItem from="1580885257185" duration="14927000" />
       <workItem from="1581168293698" duration="199000" />
-      <workItem from="1581170295493" duration="14829000" />
+      <workItem from="1581170295493" duration="17244000" />
+      <workItem from="1581313721210" duration="3697000" />
     </task>
     <task id="LOCAL-00001" summary="workspace file">
       <created>1581273261214</created>
@@ -218,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581273261214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed unused route.">
+      <created>1581348839474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581348839474</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed unused method.">
+      <created>1581348871667</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581348871667</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +247,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workspace file" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace file" />
+    <MESSAGE value="Removed unused route." />
+    <MESSAGE value="Removed unused method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused method." />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581080618080">
@@ -237,22 +260,22 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="482" y="23" width="476" height="834" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580914864131" />
-    <state x="303" y="42" key="CommitChangelistDialog2" timestamp="1581273261047">
+    <state x="303" y="42" key="CommitChangelistDialog2" timestamp="1581352773862">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="303" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1581273261047" />
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1581273250402">
+    <state x="303" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1581352773862" />
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1581352759399">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1581273250402" />
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1581352759399" />
     <state x="221" y="79" key="SettingsEditor" timestamp="1581276904525">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="221" y="79" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1581276904525" />
-    <state x="397" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1581170297637">
+    <state x="397" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1581313722201">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1581170297637" />
+    <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1581313722201" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580885257650" />
     <state x="378" y="197" width="683" height="486" key="find.popup" timestamp="1580893601670">
       <screen x="0" y="23" width="1440" height="834" />

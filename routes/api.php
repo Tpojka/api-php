@@ -20,7 +20,6 @@ Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
 });
 
 Route::group(['middleware' => ['auth:api']], function () {
-    Route::put('profiles/update-profile', 'Profile\IndexController@updateProfile');
     Route::resource('profiles', 'Profile\IndexController');
 });
 

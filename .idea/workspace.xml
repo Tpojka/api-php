@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91789bda-5390-4136-bc62-8b0755749550" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,7 @@
         <item name="mbp@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tockovi_local: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="model_has_permissions: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -151,6 +155,7 @@
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNSqzlow6W3yY36BZeeodMfH7a" />
@@ -212,7 +217,7 @@
       <workItem from="1581313721210" duration="5064000" />
       <workItem from="1581665874205" duration="3753000" />
       <workItem from="1581779250996" duration="2290000" />
-      <workItem from="1582216670239" duration="3643000" />
+      <workItem from="1582216670239" duration="5852000" />
     </task>
     <task id="LOCAL-00001" summary="workspace file">
       <created>1581273261214</created>
@@ -324,10 +329,14 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="110" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1582231109492" />
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1582231267943">
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1582233669020">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1582231267943" />
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1582233669020" />
+    <state x="518" y="169" key="RollbackChangesDialog" timestamp="1582233648964">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="518" y="169" key="RollbackChangesDialog/0.23.1440.834@0.23.1440.834" timestamp="1582233648964" />
     <state x="221" y="79" key="SettingsEditor" timestamp="1581276904525">
       <screen x="0" y="23" width="1440" height="834" />
     </state>

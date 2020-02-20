@@ -15,11 +15,21 @@ class IndexController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return void
+     * @return JsonResponse
      */
     public function index()
     {
-        //
+        try {
+            $profiles = User::paginate(2);
+            if (empty($profiles)) {
+                throw new Exception('Empty collection');
+            }
+            $return = new JsonResponse($profiles);
+        } catch (Exception $e) {
+            $return = new JsonResponse([]);
+        } finally {
+            return $return;
+        }
     }
 
     /**

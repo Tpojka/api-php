@@ -26,7 +26,6 @@ class RegisterController extends Controller
                 'name',
                 'email',
                 'password',
-                'password_confirmation'
             ]);
 
             $user = User::create([

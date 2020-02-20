@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91789bda-5390-4136-bc62-8b0755749550" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LogoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Auth/LogoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Profile/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Profile/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/v1/routes_api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Profile/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Profile/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +48,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tockovi_local: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mbp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tockovi_local: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -69,7 +74,6 @@
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark-ext-table" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
@@ -213,7 +217,7 @@
       <workItem from="1581313721210" duration="5064000" />
       <workItem from="1581665874205" duration="3753000" />
       <workItem from="1581779250996" duration="2290000" />
-      <workItem from="1582216670239" duration="838000" />
+      <workItem from="1582216670239" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary="workspace file">
       <created>1581273261214</created>
@@ -278,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581353480535</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Moved files under v1 version location.">
+      <created>1582217823325</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582217823325</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +305,8 @@
     <MESSAGE value="Route authorization security." />
     <MESSAGE value="Sorting request validation filter." />
     <MESSAGE value="Route authorization." />
-    <option name="LAST_COMMIT_MESSAGE" value="Route authorization." />
+    <MESSAGE value="Moved files under v1 version location." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved files under v1 version location." />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581080618080">
@@ -305,14 +317,14 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="482" y="23" width="476" height="834" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580914864131" />
-    <state x="303" y="42" key="CommitChangelistDialog2" timestamp="1581353480389">
+    <state x="110" y="42" key="CommitChangelistDialog2" timestamp="1582217823140">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="303" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1581353480389" />
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1581730591157">
+    <state x="110" y="42" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1582217823140" />
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog" timestamp="1582231072350">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1581730591157" />
+    <state x="100" y="123" width="1240" height="634" key="DiffContextDialog/0.23.1440.834@0.23.1440.834" timestamp="1582231072350" />
     <state x="221" y="79" key="SettingsEditor" timestamp="1581276904525">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -322,9 +334,10 @@
     </state>
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1581779253832" />
     <state x="397" y="272" key="com.intellij.ide.util.TipDialog/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580885257650" />
-    <state x="378" y="197" width="683" height="486" key="find.popup" timestamp="1580893601670">
+    <state x="378" y="197" width="683" height="486" key="find.popup" timestamp="1582217891917">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state x="378" y="197" width="683" height="486" key="find.popup/0.23.1440.834@0.23.1440.834" timestamp="1582217891917" />
     <state x="378" y="197" width="683" height="486" key="find.popup/1440.23.1024.745/0.23.1440.834@0.23.1440.834" timestamp="1580893601670" />
   </component>
 </project>

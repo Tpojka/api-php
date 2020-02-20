@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return response()->json(['message' => 'Ok'], 200);
-})->name('home');
+Route::get('{any}', function () {
+    return redirect()->to('api/v1');
+})
+    ->where('any', '.*')
+    ->name('home');

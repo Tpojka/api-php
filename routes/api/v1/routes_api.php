@@ -13,14 +13,27 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/', function () {
+    return ['version' => 'v1'];
+});
+
+/**
+ * Auth routes [/register, /login, /logout]
+ * These routes are prefixed with /auth/
+ */
 Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
     Route::post('login', 'LoginController');
     Route::post('register', 'RegisterController');
-    Route::post('logout', 'LogoutController')->middleware('auth:api');
+    /**
+     * Visitor has to be authenticated to access this route.
+     */
+    Route::post('logout', 'LogoutController')->middleware('auth');
 });
 
-Route::group(['middleware' => ['auth:api']], function () {
+/**
+ * Authenticated routes
+ */
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
     Route::resource('profiles', 'Profile\IndexController');
 });
-
-Route::get('dashboard', 'DashboardController@index')->middleware('auth:api');

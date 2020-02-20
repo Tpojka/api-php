@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\Profile;
+namespace App\Http\Controllers\Api\V1\Profile;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\ProfileUpdateRequest;
@@ -8,7 +8,6 @@ use App\User;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Log;
 
 class IndexController extends Controller

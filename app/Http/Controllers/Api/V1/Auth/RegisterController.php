@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\Auth;
+namespace App\Http\Controllers\Api\V1\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\RegisterRequest;
@@ -39,7 +39,7 @@ class RegisterController extends Controller
 
             $return = response()->json(['user' => $user, 'token' => $token], 201);
         } catch (Exception $e) {
-            $return = response()->json(['error' => $e->getMessage(), 'redirect_route' => 'home'], 500);
+            $return = response()->json(['message' => $e->getMessage(), 'errors' => [$e->getMessage()], 'redirect_route_url' => route('dashboard')], 200);
         } finally {
             return $return;
         }
